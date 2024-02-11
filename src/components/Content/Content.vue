@@ -43,14 +43,14 @@ export default {
 <template>
     <p>Узнать погоду в {{ city == "" ? "вашем городе" : cityName }}</p>
     <input type="text" v-model="city" placeholder="Введите город">
-    <button v-if="city != ''" @click="getWeather">Получить погоду</button>
+    <button v-if="city != ''" @click="getWeather" data-cy="submit">Получить погоду</button>
     <button disabled v-else>Введите название города</button>
     <p class="error">{{ error }}</p>
-    <div v-if="info != null">
-        <p> {{ showTemp }}</p>
-        <p> {{ showFeelsLike }}</p>
-        <p> {{ showMinTemp }}</p>
-        <p> {{ showMaxTemp }}</p>
+    <div v-if="info != null" data-cy="info-block">
+        <p>{{ showTemp }}</p>
+        <p>{{ showFeelsLike }}</p>
+        <p>{{ showMinTemp }}</p>
+        <p>{{ showMaxTemp }}</p>
     </div>
 </template>
 
