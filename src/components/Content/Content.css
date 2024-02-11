@@ -1,0 +1,40 @@
+.error {
+  color: red;
+}
+
+p {
+  margin-top: 20px;
+}
+
+input {
+  margin-top: 30px;
+  background: transparent;
+  border: 0;
+  border-bottom: 2px solid #110813;
+  font-size: 14px;
+  padding: 5px 8px;
+  outline: none;
+}
+
+input:focus {
+  border-bottom-color: #6e2d7d;
+}
+
+button {
+  background: #e3bc4b;
+  color: #fff;
+  border-radius: 10px;
+  padding: 10px 15px;
+  margin-left: 20px;
+  cursor: pointer;
+  transition: transform 500ms ease;
+}
+
+button:hover {
+  transform: scale(1.1) translateY(-5px);
+}
+
+button:disabled {
+  background: #746027;
+  cursor: not-allowed;
+}
